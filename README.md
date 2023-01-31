@@ -13,3 +13,7 @@ MoodMoji is a mood diary. The app is designed to be use as a log which the user 
 
 ## License
 GNU GPLv3 - This license was picked so that anyone who might want to use this app can do so free of charge.
+
+## Screenshots
+<img src="https://i.imgur.com/tBkoyeW.png" alt="screenshot of emojis in a grid layout." width="200"/>
+<img src="https://i.imgur.com/H0xfziu.png" alt="screenshot of apps notes section." width="200"/>

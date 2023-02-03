@@ -13,12 +13,12 @@ struct ContentView: View {
         TabView {
             EntriesView()
                 .tabItem {
-                    Image(systemName: "1.circle.fill")
+                    Image(systemName: "book.fill")
                     Text("Entries")
                 }
             LogView()
                 .tabItem {
-                    Image(systemName: "2.square.fill")
+                    Image(systemName: "pencil.line")
                     Text("Log")
                 }
         }

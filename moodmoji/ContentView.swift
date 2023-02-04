@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             LogView(timeline: timeline)
                 .tabItem {
-                    Image(systemName: "pencil.line")
+                    Image(systemName: "pencil.circle.fill")
                     Text("Log")
                 }
         }

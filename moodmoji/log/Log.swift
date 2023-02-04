@@ -20,8 +20,8 @@ struct Log: Identifiable {
         self.date = date
     }
     
-    func getString() {
+    func getString() -> String {
         let output = "\(self.date.formatted())\n\(self.emotions)\n\(self.notes)\n";
-        return
+        return output;
     }
 }

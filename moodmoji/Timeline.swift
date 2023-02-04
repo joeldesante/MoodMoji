@@ -7,10 +7,10 @@
 
 import Foundation
 
-class Timeline {
+class Timeline: ObservableObject {
     
     private let logModel: LogModel;
-    private var logs: [Log];
+    @Published var logs: [Log];
     
     init() {
         self.logModel = LogFileSystem();

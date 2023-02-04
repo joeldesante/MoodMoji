@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LogView: View {
     
+    @ObservedObject var timeline: Timeline;
     @State private var additionalNotes: String = "";
     @State private var selectedEmotions = Set<String>();
     @State private var currentDate = Date()
@@ -38,8 +39,17 @@ struct LogView: View {
                 DatePicker("", selection: $currentDate, displayedComponents: [.date, .hourAndMinute])
                             .labelsHidden()
                 Button("Log") {
-                    EntriesHandler.createEntry(date: currentDate, emotions: selectedEmotions, notes: additionalNotes);
                     
+                    let log = Log(
+                        id: UUID(),
+                        emotions: selectedEmotions.joined(separator: ", "),
+                        notes: additionalNotes,
+                        date: currentDate
+                    )
+                    
+                    timeline.createLog(log: log);
+                    
+                    // Reset
                     selectedEmotions = Set<String>();
                     additionalNotes = "";
                     currentDate = Date() 
@@ -55,6 +65,6 @@ struct LogView: View {
 
 struct LogView_Previews: PreviewProvider {
     static var previews: some View {
-        LogView()
+        LogView(timeline: Timeline())
     }
 }

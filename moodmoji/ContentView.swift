@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            EntriesView()
+            TimelineView()
                 .tabItem {
                     Image(systemName: "book.fill")
                     Text("Entries")

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EntriesView: View {
+struct TimelineView: View {
     
     @State var entries = EntriesHandler.getEntries();
     @State private var mailData = ComposeMailData(
@@ -57,6 +57,6 @@ struct EntriesView: View {
 
 struct EntriesView_Previews: PreviewProvider {
     static var previews: some View {
-        EntriesView()
+        TimelineView()
     }
 }

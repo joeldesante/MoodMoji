@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0E6B5B298DDA6500AC89B1 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E6B5A298DDA6500AC89B1 /* LogModel.swift */; };
+		9E0E6B5E298DDBEA00AC89B1 /* LogFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E6B5D298DDBEA00AC89B1 /* LogFileSystem.swift */; };
+		9E0E6B60298DDEBB00AC89B1 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E6B5F298DDEBB00AC89B1 /* Log.swift */; };
 		9EABF78F29875A3400557EFE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF78E29875A3400557EFE /* Colors.swift */; };
 		9EABF791298763B300557EFE /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF790298763B200557EFE /* LogView.swift */; };
-		9EABF793298766FA00557EFE /* EntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF792298766FA00557EFE /* EntriesView.swift */; };
-		9EABF79729876B4D00557EFE /* EntriesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF79629876B4D00557EFE /* EntriesHandler.swift */; };
+		9EABF793298766FA00557EFE /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF792298766FA00557EFE /* TimelineView.swift */; };
+		9EABF79729876B4D00557EFE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF79629876B4D00557EFE /* Timeline.swift */; };
 		9EABF79929878F1800557EFE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF79829878F1800557EFE /* Entry.swift */; };
 		9EABF79B2987B12000557EFE /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF79A2987B12000557EFE /* Email.swift */; };
 		9EABF79D2987B23D00557EFE /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF79C2987B23D00557EFE /* MailView.swift */; };
@@ -24,10 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E0E6B5A298DDA6500AC89B1 /* LogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
+		9E0E6B5D298DDBEA00AC89B1 /* LogFileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileSystem.swift; sourceTree = "<group>"; };
+		9E0E6B5F298DDEBB00AC89B1 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		9EABF78E29875A3400557EFE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9EABF790298763B200557EFE /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
-		9EABF792298766FA00557EFE /* EntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesView.swift; sourceTree = "<group>"; };
-		9EABF79629876B4D00557EFE /* EntriesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesHandler.swift; sourceTree = "<group>"; };
+		9EABF792298766FA00557EFE /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		9EABF79629876B4D00557EFE /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		9EABF79829878F1800557EFE /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9EABF79A2987B12000557EFE /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		9EABF79C2987B23D00557EFE /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
@@ -52,6 +58,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E0E6B56298DD67800AC89B1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9E0E6B59298DD6A600AC89B1 /* log */,
+				9E0E6B57298DD68000AC89B1 /* timeline */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9E0E6B57298DD68000AC89B1 /* timeline */ = {
+			isa = PBXGroup;
+			children = (
+				9EABF792298766FA00557EFE /* TimelineView.swift */,
+			);
+			path = timeline;
+			sourceTree = "<group>";
+		};
+		9E0E6B59298DD6A600AC89B1 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				9EABF790298763B200557EFE /* LogView.swift */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		9E0E6B5C298DDBA500AC89B1 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				9E0E6B5A298DDA6500AC89B1 /* LogModel.swift */,
+				9E0E6B5D298DDBEA00AC89B1 /* LogFileSystem.swift */,
+				9E0E6B5F298DDEBB00AC89B1 /* Log.swift */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
 		9EB165D4298721CD004D4E49 = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +112,15 @@
 		9EB165DF298721CD004D4E49 /* moodmoji */ = {
 			isa = PBXGroup;
 			children = (
+				9E0E6B5C298DDBA500AC89B1 /* log */,
+				9E0E6B56298DD67800AC89B1 /* views */,
 				9EB165E0298721CD004D4E49 /* moodmojiApp.swift */,
 				9EABF78E29875A3400557EFE /* Colors.swift */,
 				9EB165E2298721CD004D4E49 /* ContentView.swift */,
-				9EABF792298766FA00557EFE /* EntriesView.swift */,
 				9EABF79C2987B23D00557EFE /* MailView.swift */,
 				9EABF79829878F1800557EFE /* Entry.swift */,
-				9EABF79629876B4D00557EFE /* EntriesHandler.swift */,
+				9EABF79629876B4D00557EFE /* Timeline.swift */,
 				9EABF79A2987B12000557EFE /* Email.swift */,
-				9EABF790298763B200557EFE /* LogView.swift */,
 				9EB165E4298721D0004D4E49 /* Assets.xcassets */,
 				9EB165E6298721D0004D4E49 /* Preview Content */,
 				9EB165F629872A05004D4E49 /* MoodGrid.swift */,
@@ -167,11 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0E6B5B298DDA6500AC89B1 /* LogModel.swift in Sources */,
 				9EABF79929878F1800557EFE /* Entry.swift in Sources */,
+				9E0E6B60298DDEBB00AC89B1 /* Log.swift in Sources */,
 				9EB165F32987275C004D4E49 /* Mood.swift in Sources */,
-				9EABF79729876B4D00557EFE /* EntriesHandler.swift in Sources */,
-				9EABF793298766FA00557EFE /* EntriesView.swift in Sources */,
+				9EABF79729876B4D00557EFE /* Timeline.swift in Sources */,
+				9EABF793298766FA00557EFE /* TimelineView.swift in Sources */,
 				9EABF79B2987B12000557EFE /* Email.swift in Sources */,
+				9E0E6B5E298DDBEA00AC89B1 /* LogFileSystem.swift in Sources */,
 				9EABF78F29875A3400557EFE /* Colors.swift in Sources */,
 				9EB165F729872A05004D4E49 /* MoodGrid.swift in Sources */,
 				9EABF79D2987B23D00557EFE /* MailView.swift in Sources */,

@@ -9,16 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var timeline: Timeline = Timeline();
+    
     var body: some View {
         TabView {
-            EntriesView()
+            TimelineView(timeline: timeline)
                 .tabItem {
-                    Image(systemName: "1.circle.fill")
+                    Image(systemName: "book.fill")
                     Text("Entries")
                 }
-            LogView()
+            LogView(timeline: timeline)
                 .tabItem {
-                    Image(systemName: "2.square.fill")
+                    Image(systemName: "pencil.circle.fill")
                     Text("Log")
                 }
         }
